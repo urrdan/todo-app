@@ -1,0 +1,25 @@
+body {
+  font-family: 'Poppins'; 
+}
+body,html, #root{
+  width: 100%;
+  height: 100%
+}
+.todo-main{
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto
+}
+.todos-display{
+  overflow: auto
+}
+.todos-display::-webkit-scrollbar{
+  width: 3px;
+}
+.todos-display::-webkit-scrollbar-thumb{
+  background: gray;
+  
+}
+.write-todo{
+  border: none;
+  box-shadow: 0 0 3px gray
+}
