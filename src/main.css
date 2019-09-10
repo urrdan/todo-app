@@ -1,13 +1,22 @@
 body {
   font-family: 'Poppins'; 
 }
-body,html, #root{
+body,html, #root,.main{
   width: 100%;
   height: 100%
 }
+.main{
+  display: grid;
+  grid-auto-rows: auto minmax(auto,1fr) auto
+}
+.main>
+.write-todo{
+  border: none;
+  box-shadow: 0 0 3px gray;
+}
 .todo-main{
   display: grid;
-  grid-template-rows: auto auto auto 1fr auto
+  grid-template-rows: auto auto minmax(auto,1fr)
 }
 .todos-display{
   overflow: auto
@@ -18,8 +27,4 @@ body,html, #root{
 .todos-display::-webkit-scrollbar-thumb{
   background: gray;
   
-}
-.write-todo{
-  border: none;
-  box-shadow: 0 0 3px gray
 }

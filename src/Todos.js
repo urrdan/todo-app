@@ -2,7 +2,7 @@ import React from 'react';
 
 const Todos = (pro) => {
     var style={}
-    if(pro.item.checked){style={color: 'gray', textDecoration: 'line-through'}}
+    if(pro.item.checked){style={color: 'gray', textDecoration: 'line-through', fontStyle: 'italic'}}
     return(
         <div className="d-flex justify-content-between my-2">
             <div className='d-flex align-items-center'>
